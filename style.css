@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(194, 194, 194);
+}
+main#game-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+div.casas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.pecas{
+    width: 100%;
+    height: 100%;
+}
+img.pecas:hover{
+    cursor: grab;
+}
+.inzone{
+    background-color: red;
+}
